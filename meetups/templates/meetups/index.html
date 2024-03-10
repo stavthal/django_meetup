@@ -26,24 +26,7 @@ Find the one that best suits your needs!
   <h2>Upcoming meetups</h2>
   <ol>
     {% for meetup in meetups %}
-    <li class="meetup-item">
-      <article>
-        <div class="meetup-summary">
-          <div class="meetup-image">
-            <img src="" alt="" />
-          </div>
-          <div class="meetup-details">
-            <h3>{{ meetup.title }}</h3>
-            <address>{{ meetup.location }}</address>
-          </div>
-        </div>
-        <div class="meetup-actions">
-          <a class="btn" href="{% url 'meetup-details' meetup.slug %}"
-            >Show details</a
-          >
-        </div>
-      </article>
-    </li>
+      {% include 'meetups/meetup-item.html' %}
     {% endfor %}
   </ol>
 </section>
