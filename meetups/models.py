@@ -18,6 +18,8 @@ class Participant(models.Model):
     
 class Meetup(models.Model): # extends the base class of Model
     title = models.CharField(max_length=200)
+    organizer_email = models.EmailField()
+    date = models.DateField()
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     slug = models.SlugField(unique=True, db_index=True)
     description = models.TextField(blank=True, null=True)

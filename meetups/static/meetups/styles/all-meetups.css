@@ -14,7 +14,8 @@ ol {
   background-color: #27632a; /* Dark green for items */
   padding: 2rem;
   color: white; /* White text for high contrast */
-  border-radius: 4px;
+  border-radius: 8px;
+  border: 2px solid #fff;
 }
 
 .meetup-summary {
@@ -31,6 +32,7 @@ ol {
   height: 8rem;
   object-fit: cover;
   border-radius: 50%;
+  border: 2px solid #fff;
 }
 
 .meetup-details h3 {
