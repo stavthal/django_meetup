@@ -11,9 +11,9 @@ ol {
 
 .meetup-item {
   margin: 1rem 0;
-  background-color: #350490;
+  background-color: #27632a; /* Dark green for items */
   padding: 2rem;
-  color: white;
+  color: white; /* White text for high contrast */
   border-radius: 4px;
 }
 
@@ -34,7 +34,7 @@ ol {
 }
 
 .meetup-details h3 {
-  color: inherit;
+  color: inherit; /* Ensures text color is white for readability */
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 2rem;
@@ -42,6 +42,7 @@ ol {
 
 .meetup-details address {
   font-style: italic;
+  color: #e8f5e9; /* Lighter shade for a subtle contrast */
 }
 
 .meetup-actions {
@@ -50,13 +51,13 @@ ol {
 }
 
 .meetup-actions .btn {
-  background-color: #cb82fb;
-  border-color: #cb82fb;
-  color: #350490;
+  background-color: #4caf50; /* Bright green for buttons */
+  border-color: #4caf50; /* Matching border color */
+  color: white; /* White text for readability */
   padding: 0.75rem 2rem;
 }
 
 .meetup-actions .btn:hover {
-  background-color: #ba82fb;
-  border-color: #ba82fb;
+  background-color: #388e3c; /* Darker green on hover for visual feedback */
+  border-color: #388e3c;
 }
