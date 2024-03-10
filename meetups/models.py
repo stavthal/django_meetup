@@ -7,4 +7,5 @@ class Meetup(models.Model): # extends the base class of Model
     location = models.CharField(max_length=200)
     slug = models.SlugField(unique=True, db_index=True)
     description = models.TextField()
+    image = models.ImageField(upload_to='images')
     
