@@ -15,9 +15,9 @@ Thanks for signing up!
 
 {% block body %}
 <section id="confirmation">
-    <h2>You registered successfully!</h2>
+    <h2>You registered successfully for "<bold>{{ meetup.title }}</bold>"!</h2>
     <p>Thanks for signing up - see you at the meetup!</p>
-    <p>Got questions or can't make it? Please <a href="mailto:">contact the organizer</a> ahead of time!</p>
+    <p>Got questions or can't make it? Please <a href="mailto:{{ meetup.organizer_email }}">contact the organizer</a> ahead of time!</p>
 </section>
 
 <section id="continue">
